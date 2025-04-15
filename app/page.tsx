@@ -6,10 +6,7 @@ export default function Home() {
   const [value, setValue] = useState(0.01);
 
   const handleClick = () => {
-    setValue((prevValue) => {
-      const newValue = prevValue * 2;
-      return parseFloat(newValue.toFixed(2));
-    });
+    setValue((prevValue) => parseFloat((prevValue + 0.05).toFixed(2)));
   };
 
   return (
@@ -65,7 +62,7 @@ export default function Home() {
         </div>
         
         <p className="text-center text-xs sm:text-sm text-gray-400">
-          Every click increases the value by $0.05
+          Every click doubles the value
         </p>
       </main>
       
