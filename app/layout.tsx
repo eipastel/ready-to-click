@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Stupid Egg",
-  description: "A stupid egg that you can click",
+  title: "Ready to Click",
+  description: "A simple clicker game",
 };
 
 export default function RootLayout({
